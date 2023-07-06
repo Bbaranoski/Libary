@@ -1,0 +1,97 @@
+.header {
+    height: calc(10vh - 1px);
+    min-height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #84cc16;
+    font-size: 30px;
+    border-bottom: 1px solid black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body {
+    margin: 0px;
+}
+
+.books{
+    padding: 5vh 5vw;
+    background-color: #65a30d;
+    height: auto;
+    min-height: 80vh;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 15vw));
+    grid-auto-rows: minmax(250px, 45vh);
+    gap: 3vh 2vw;
+}
+
+.books > div{
+    background-color: #84cc16;
+    border: 1px solid black;
+    border-radius: 20px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+p, label{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: max(1vw,15px);
+    margin: 0;
+}
+
+button {
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 15px;
+    background-color: #bef264;
+}
+
+button:hover{
+    background-color: #a3e635;
+}
+
+.button{
+    order: 3;
+}
+
+form > div{
+    display: flex;
+    justify-content: space-between;
+}
+
+.forms{
+    order: 2;
+}
+
+form{
+    height: 45vh;
+    min-height: 250px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+input{
+    border: 1px solid black;
+    margin-left: 5px;
+    border-radius: 20px;
+    padding-left: 10px;
+    width: 8vw;
+    min-width: 75px;
+}
+
+input:focus{
+    background-color: #f1f5f9;
+}
+
+.remove{
+    background-color: #ef4444;
+    font-weight: bold;
+    border: 2px solid black;
+}
+
+.remove:hover{
+    background-color: #dc2626;
+}
